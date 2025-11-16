@@ -1,0 +1,82 @@
+/* примени стили с header в main/ footer для масштабирования */
+.main-top {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 60px;
+    background-color: rgba(222, 236, 221, 0.8);
+    padding: 105px 30px;
+}
+
+.main-top__content {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(auto,640px));
+}
+
+.main-top__text {
+    width: auto;
+    max-width: 525px;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-top__title {
+    min-height: 160px;
+    height: auto;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -5%;
+    color: rgba(71, 80, 9, 1);
+    margin-bottom: 40px;
+}
+
+.main-top__description {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(71, 80, 9, 1);
+    margin-bottom: 50px;
+}
+
+.main-top__button {
+    background-color: transparent;
+    border: 0cap;
+    width: 400px;
+    min-height: 84px;
+    border-radius: 30px;
+    padding: 30px 71px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(80, 33, 152, 1);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-top__img {
+    max-width: 640px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr,300px));
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 35px;
+}
+
+.main-top__first-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 3;
+}
+
+.main-top__second-img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+}
+
+.main-top__third-img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
